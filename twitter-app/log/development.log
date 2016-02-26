@@ -1380,3 +1380,417 @@ Processing by TweetsController#index as HTML
   [1m[36mTweet Load (0.2ms)[0m  [1mSELECT "tweets".* FROM "tweets" WHERE "tweets"."user_id" = ?[0m  [["user_id", 1]]
   Rendered tweets/index.html.erb within layouts/application (15.7ms)
 Completed 200 OK in 55ms (Views: 33.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-26 11:41:57 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TweetsController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTweet Load (0.6ms)[0m  [1mSELECT "tweets".* FROM "tweets"[0m
+  [1m[35mTweet Load (0.2ms)[0m  SELECT "tweets".* FROM "tweets" WHERE "tweets"."user_id" = ?  [["user_id", 1]]
+  Rendered tweets/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 300ms (Views: 252.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/tweets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-26 11:41:58 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-02-26 11:41:58 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-02-26 11:41:58 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-02-26 11:41:58 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-26 11:41:58 -0500
+
+
+Started GET "/assets/tweets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-26 11:41:58 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-02-26 11:41:58 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-26 11:43:30 -0500
+Processing by TweetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTweet Load (0.2ms)[0m  SELECT "tweets".* FROM "tweets"
+  [1m[36mTweet Load (0.2ms)[0m  [1mSELECT "tweets".* FROM "tweets" WHERE "tweets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered tweets/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 52ms (Views: 39.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-02-26 11:43:30 -0500
+
+
+Started GET "/assets/tweets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-26 11:43:30 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-26 11:43:30 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-02-26 11:43:30 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-02-26 11:43:30 -0500
+
+
+Started GET "/assets/tweets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-26 11:43:30 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-02-26 11:43:30 -0500
+
+
+Started DELETE "/tweets/2" for 127.0.0.1 at 2016-02-26 11:43:33 -0500
+Processing by TweetsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BhcPGd8M27KbhJBRAu+y7fWhadpYWPynfwGXaQtDvc7sG0kiGMxD+vqV5kqT8GfdIM6A2u61PXSl00descEo2Q==", "id"=>"2"}
+  [1m[35mTweet Load (0.2ms)[0m  SELECT  "tweets".* FROM "tweets" WHERE "tweets"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  DELETE FROM "tweets" WHERE "tweets"."id" = ?  [["id", 2]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://lvh.me:3000/tweets
+Completed 302 Found in 5ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/tweets" for 127.0.0.1 at 2016-02-26 11:43:33 -0500
+Processing by TweetsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTweet Load (0.2ms)[0m  [1mSELECT "tweets".* FROM "tweets"[0m
+  [1m[35mTweet Load (0.4ms)[0m  SELECT "tweets".* FROM "tweets" WHERE "tweets"."user_id" = ?  [["user_id", 1]]
+  Rendered tweets/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/tweets/10" for 127.0.0.1 at 2016-02-26 11:43:38 -0500
+Processing by TweetsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4uUBRVFA4SCS/EJViK5s68EPFaIeLw/5edCUoNc0yHoI6Ud+loB5aPPtNE4ZsbnbFGD8oqjCziqjAkSXbbZdbQ==", "id"=>"10"}
+  [1m[36mTweet Load (0.3ms)[0m  [1mSELECT  "tweets".* FROM "tweets" WHERE "tweets"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 10]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://lvh.me:3000/tweets
+Completed 302 Found in 4ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/tweets" for 127.0.0.1 at 2016-02-26 11:43:38 -0500
+Processing by TweetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTweet Load (0.2ms)[0m  SELECT "tweets".* FROM "tweets"
+  [1m[36mTweet Load (0.1ms)[0m  [1mSELECT "tweets".* FROM "tweets" WHERE "tweets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered tweets/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tweets/new" for 127.0.0.1 at 2016-02-26 11:43:40 -0500
+Processing by TweetsController#new as HTML
+  Rendered tweets/new.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 35ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tweets/new" for 127.0.0.1 at 2016-02-26 11:44:19 -0500
+Processing by TweetsController#new as HTML
+  Rendered tweets/new.html.erb within layouts/application (13.3ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    11: 	</p>
+    12: 
+    13: 	<p>
+    14: 		<%= f.select :user %>
+    15: 	</p>
+    16: 
+    17: 	<p>
+  app/views/tweets/new.html.erb:14:in `block in _app_views_tweets_new_html_erb__783087475596627962_70296348318100'
+  app/views/tweets/new.html.erb:5:in `_app_views_tweets_new_html_erb__783087475596627962_70296348318100'
+
+
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (54.4ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.3ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (114.2ms)
+
+
+Started GET "/tweets/new" for 127.0.0.1 at 2016-02-26 11:44:38 -0500
+Processing by TweetsController#new as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered tweets/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-02-26 11:44:38 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-02-26 11:44:38 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-02-26 11:44:38 -0500
+
+
+Started GET "/assets/tweets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-26 11:44:38 -0500
+
+
+Started GET "/assets/tweets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-26 11:44:38 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-26 11:44:38 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-02-26 11:44:38 -0500
+
+
+Started GET "/tweets/new" for 127.0.0.1 at 2016-02-26 11:44:52 -0500
+Processing by TweetsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tweets/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-02-26 11:44:52 -0500
+
+
+Started GET "/assets/tweets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-26 11:44:52 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-02-26 11:44:52 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-26 11:44:52 -0500
+
+
+Started GET "/assets/tweets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-26 11:44:52 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-02-26 11:44:52 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-02-26 11:44:52 -0500
+
+
+Started POST "/tweets" for 127.0.0.1 at 2016-02-26 11:45:01 -0500
+Processing by TweetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KXHWHkjFPeO09v632QGtTWbPa9zheuo/OKiHHqr3wcrDfZAljwWlq9XniKxIHnh9s6CC3FeXK+zielcpEHVU3Q==", "tweet"=>{"message"=>"Tweet", "user"=>"2"}, "commit"=>"Create Tweet"}
+Unpermitted parameter: user
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("message", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["message", "Tweet"], ["created_at", "2016-02-26 16:45:01.854582"], ["updated_at", "2016-02-26 16:45:01.854582"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://lvh.me:3000/tweets
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/tweets" for 127.0.0.1 at 2016-02-26 11:45:01 -0500
+Processing by TweetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTweet Load (0.2ms)[0m  SELECT "tweets".* FROM "tweets"
+  [1m[36mTweet Load (0.1ms)[0m  [1mSELECT "tweets".* FROM "tweets" WHERE "tweets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered tweets/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tweets/new" for 127.0.0.1 at 2016-02-26 11:45:05 -0500
+Processing by TweetsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered tweets/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/tweets" for 127.0.0.1 at 2016-02-26 11:45:08 -0500
+Processing by TweetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"84UES8gbZ3lCuiQxvYDyO+38D/TsD5+DYWVCr8gTpjQZiUJwD9v/MSOrUiosnycLOJPm9FriXlC7t5KYcpEzIw==", "tweet"=>{"message"=>"De bootcamp", "user"=>"1"}, "commit"=>"Create Tweet"}
+Unpermitted parameter: user
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tweets" ("message", "created_at", "updated_at") VALUES (?, ?, ?)  [["message", "De bootcamp"], ["created_at", "2016-02-26 16:45:08.782048"], ["updated_at", "2016-02-26 16:45:08.782048"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://lvh.me:3000/tweets
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/tweets" for 127.0.0.1 at 2016-02-26 11:45:08 -0500
+Processing by TweetsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTweet Load (0.1ms)[0m  [1mSELECT "tweets".* FROM "tweets"[0m
+  [1m[35mTweet Load (0.1ms)[0m  SELECT "tweets".* FROM "tweets" WHERE "tweets"."user_id" = ?  [["user_id", 1]]
+  Rendered tweets/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tweets" for 127.0.0.1 at 2016-02-26 11:45:10 -0500
+Processing by TweetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTweet Load (0.5ms)[0m  SELECT "tweets".* FROM "tweets"
+  [1m[36mTweet Load (0.1ms)[0m  [1mSELECT "tweets".* FROM "tweets" WHERE "tweets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered tweets/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/tweets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-26 11:45:10 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-26 11:45:10 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-02-26 11:45:10 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-02-26 11:45:10 -0500
+
+
+Started GET "/assets/tweets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-26 11:45:10 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-02-26 11:45:10 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-02-26 11:45:10 -0500
+
+
+Started GET "/tweets/new" for 127.0.0.1 at 2016-02-26 11:45:21 -0500
+Processing by TweetsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered tweets/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 24ms (Views: 18.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/tweets" for 127.0.0.1 at 2016-02-26 11:45:23 -0500
+Processing by TweetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U3O+u37s+LOgq5ezqMoTaOuNvNfWd6p7zy2H4zKqJYO5f/iAuSxg+8G64ag51cZYPuJV12Caa6gV/1fUiCiwlA==", "tweet"=>{"message"=>"asdasd", "user"=>"1"}, "commit"=>"Create Tweet"}
+Unpermitted parameter: user
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("message", "created_at", "updated_at") VALUES (?, ?, ?)  [["message", "asdasd"], ["created_at", "2016-02-26 16:45:23.263637"], ["updated_at", "2016-02-26 16:45:23.263637"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://lvh.me:3000/tweets
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/tweets" for 127.0.0.1 at 2016-02-26 11:45:23 -0500
+Processing by TweetsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTweet Load (0.1ms)[0m  [1mSELECT "tweets".* FROM "tweets"[0m
+  [1m[35mTweet Load (0.1ms)[0m  SELECT "tweets".* FROM "tweets" WHERE "tweets"."user_id" = ?  [["user_id", 1]]
+  Rendered tweets/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tweets/new" for 127.0.0.1 at 2016-02-26 11:45:37 -0500
+Processing by TweetsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tweets/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 32ms (Views: 26.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/tweets" for 127.0.0.1 at 2016-02-26 11:45:39 -0500
+Processing by TweetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OO3JCNrNBP0HTO/s9ZgEZLzuFBuACzGyrAylSawf+CPS4Y8zHQ2ctWZdmfdkh9FUaYH9Gzbm8GF23nV+Fp1tNA==", "tweet"=>{"message"=>"ffff", "user"=>"1"}, "commit"=>"Create Tweet"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::AssociationTypeMismatch (User(#70296355244620) expected, got String(#70296292231020)):
+  app/controllers/tweets_controller.rb:26:in `create'
+
+
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.6ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.7ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (97.5ms)
+
+
+Started POST "/tweets" for 127.0.0.1 at 2016-02-26 11:46:02 -0500
+Processing by TweetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OO3JCNrNBP0HTO/s9ZgEZLzuFBuACzGyrAylSawf+CPS4Y8zHQ2ctWZdmfdkh9FUaYH9Gzbm8GF23nV+Fp1tNA==", "tweet"=>{"message"=>"ffff", "user"=>"1"}, "commit"=>"Create Tweet"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::AssociationTypeMismatch (User(#70296355244620) expected, got String(#70296292231020)):
+  app/controllers/tweets_controller.rb:26:in `create'
+
+
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.5ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.5ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/marman/.rvm/gems/ruby-2.2.3@diagnotes-web/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (95.1ms)
+
+
+Started GET "/tweets" for 127.0.0.1 at 2016-02-26 11:46:09 -0500
+Processing by TweetsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTweet Load (0.3ms)[0m  [1mSELECT "tweets".* FROM "tweets"[0m
+  [1m[35mTweet Load (0.2ms)[0m  SELECT "tweets".* FROM "tweets" WHERE "tweets"."user_id" = ?  [["user_id", 1]]
+  Rendered tweets/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 36ms (Views: 25.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/tweets/new" for 127.0.0.1 at 2016-02-26 11:46:11 -0500
+Processing by TweetsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tweets/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tweets" for 127.0.0.1 at 2016-02-26 11:46:12 -0500
+Processing by TweetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FRjMYWqjNAg51ZYNUM1OBla6mish4V2PUgcS10iHGMX/FIparWOsQFjE4BbB0ps2g9VzK5cMnFyI1cLg8gWN0g==", "tweet"=>{"message"=>"fasda", "user_id"=>"1"}, "commit"=>"Create Tweet"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("message", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "fasda"], ["user_id", 1], ["created_at", "2016-02-26 16:46:12.802125"], ["updated_at", "2016-02-26 16:46:12.802125"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://lvh.me:3000/tweets
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/tweets" for 127.0.0.1 at 2016-02-26 11:46:12 -0500
+Processing by TweetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTweet Load (0.2ms)[0m  SELECT "tweets".* FROM "tweets"
+  [1m[36mTweet Load (0.2ms)[0m  [1mSELECT "tweets".* FROM "tweets" WHERE "tweets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered tweets/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tweets/new" for 127.0.0.1 at 2016-02-26 11:46:15 -0500
+Processing by TweetsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered tweets/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/tweets" for 127.0.0.1 at 2016-02-26 11:46:17 -0500
+Processing by TweetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fRZ8dbBlb3KsLm2Zgb9g+X+6JTvpuqFcrB88wYhsqLSXGjpOd6X3Os0/G4IQoLXJqtXMO19XYI92zez2Mu49ow==", "tweet"=>{"message"=>"faffafaf", "user_id"=>"1"}, "commit"=>"Create Tweet"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("message", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["message", "faffafaf"], ["user_id", 1], ["created_at", "2016-02-26 16:46:17.016552"], ["updated_at", "2016-02-26 16:46:17.016552"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://lvh.me:3000/tweets
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/tweets" for 127.0.0.1 at 2016-02-26 11:46:17 -0500
+Processing by TweetsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTweet Load (0.2ms)[0m  [1mSELECT "tweets".* FROM "tweets"[0m
+  [1m[35mTweet Load (0.1ms)[0m  SELECT "tweets".* FROM "tweets" WHERE "tweets"."user_id" = ?  [["user_id", 1]]
+  Rendered tweets/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.5ms)

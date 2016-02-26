@@ -7,6 +7,7 @@
 		<li>
 			<%= tweet.message %>
 			<%= link_to "editar", edit_tweet_path(tweet) %>
+			<%= link_to "eliminar", tweet_path(tweet), method: :delete, data: {confirm: "Estas seguro?"} %>
 		</li>
 	<% end %>
 </ol>

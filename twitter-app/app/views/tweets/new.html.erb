@@ -11,6 +11,10 @@
 	</p>
 
 	<p>
+		<%= f.select :user_id, User.all.collect{|u| [u.nombre, u.id]} %>
+	</p>
+
+	<p>
 		<%= f.submit %>
 	</p>
 <% end %>
