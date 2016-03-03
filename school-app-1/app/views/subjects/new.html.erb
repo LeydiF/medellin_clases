@@ -1,0 +1,18 @@
+<h1>Add subject</h1>
+
+<%= form_for @subject do |f| %>
+	<div>
+		<%= f.label :name %>	
+		<%= f.text_field :name %>	
+	</div>
+
+	<div>
+		<%= f.label :code %>	
+		<%= f.text_field :code %>	
+	</div>
+
+	<div>
+		<%= f.submit "Save" %>
+	</div>
+
+<% end %>

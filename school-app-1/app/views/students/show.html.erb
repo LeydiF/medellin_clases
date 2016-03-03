@@ -1,0 +1,9 @@
+<h1>Student information</h1>
+
+<h2>Subjects</h2>
+
+<ul>
+	<% @student.subjects.each do |subject| %>
+		<li><%= subject.name %></li>
+	<% end %>
+</ul>

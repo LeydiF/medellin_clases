@@ -1,0 +1,23 @@
+<%= form_for student do |f| %>
+	
+	<div>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</div>
+
+	<div>
+		<%= f.label :code %>
+		<%= f.text_field :code %>
+	</div>
+
+	<div>
+		<%= f.label :subjects %>
+		<%= f.collection_check_boxes :subject_ids, Subject.all, :id, :name %>
+	</div>
+
+
+	<div>
+		<%= f.submit %>
+	</div>
+
+<% end %>

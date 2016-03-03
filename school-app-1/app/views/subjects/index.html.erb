@@ -1,0 +1,23 @@
+<h1>Subjects</h1>
+
+<%= link_to "Add subject", new_subject_path %>
+
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Code</th>
+			<th>Created at</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<% @subjects.each do |subject| %>
+			<tr>
+				<td><%= subject.name %></td>
+				<td><%= subject.code %></td>
+				<td><%= subject.created_at.strftime("%d-%b-%Y") %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
