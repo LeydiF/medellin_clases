@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Facturas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codigo</th>
+      <th>F vencimiento</th>
+      <th>Nit cliente</th>
+      <th>Cliente</th>
+      <th>Vendedor</th>
+      <th>Nit vendedor</th>
+      <th>Iva</th>
+      <th>Precio u</th>
+      <th>Total</th>
+      <th>Cantidad</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @facturas.each do |factura| %>
+      <tr>
+        <td><%= factura.codigo %></td>
+        <td><%= factura.f_vencimiento %></td>
+        <td><%= factura.nit_cliente %></td>
+        <td><%= factura.cliente %></td>
+        <td><%= factura.vendedor %></td>
+        <td><%= factura.nit_vendedor %></td>
+        <td><%= factura.iva %></td>
+        <td><%= factura.precio_u %></td>
+        <td><%= factura.total %></td>
+        <td><%= factura.cantidad %></td>
+        <td><%= link_to 'Show', factura %></td>
+        <td><%= link_to 'Edit', edit_factura_path(factura) %></td>
+        <td><%= link_to 'Destroy', factura, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Factura', new_factura_path %>

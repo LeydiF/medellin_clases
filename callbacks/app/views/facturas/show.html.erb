@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @factura.codigo %>
+</p>
+
+<p>
+  <strong>F vencimiento:</strong>
+  <%= @factura.f_vencimiento %>
+</p>
+
+<p>
+  <strong>Nit cliente:</strong>
+  <%= @factura.nit_cliente %>
+</p>
+
+<p>
+  <strong>Cliente:</strong>
+  <%= @factura.cliente %>
+</p>
+
+<p>
+  <strong>Vendedor:</strong>
+  <%= @factura.vendedor %>
+</p>
+
+<p>
+  <strong>Nit vendedor:</strong>
+  <%= @factura.nit_vendedor %>
+</p>
+
+<p>
+  <strong>Iva:</strong>
+  <%= @factura.iva %>
+</p>
+
+<p>
+  <strong>Precio u:</strong>
+  <%= @factura.precio_u %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @factura.total %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @factura.cantidad %>
+</p>
+
+<%= link_to 'Edit', edit_factura_path(@factura) %> |
+<%= link_to 'Back', facturas_path %>
