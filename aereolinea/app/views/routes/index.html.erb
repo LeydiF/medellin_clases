@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Rutas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ciudad origen</th>
+      <th>Ciudad destino</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @routes.each do |route| %>
+      <tr>
+        <td><%= route.city_o.name %></td>
+        <td><%= route.city_d.name %></td>
+        <td><%= link_to 'ver ruta', route %></td>
+        <td><%= link_to 'editar', edit_route_path(route) %></td>
+        <td><%= link_to 'eliminar', route, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'crear ruta', new_route_path %>

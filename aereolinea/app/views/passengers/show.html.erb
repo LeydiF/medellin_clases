@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @passenger.name %>
+</p>
+
+<p>
+  <strong>Document:</strong>
+  <%= @passenger.document %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @passenger.lastname %>
+</p>
+
+<p>Tickets</p>
+<ul>
+<% @passenger.flights.each do |f|%>
+<li><%= f.route.define_route %> - <%= f.date.strftime("%B %d %Y %H:%M:%S") %></li>
+<% end %>
+</ul>
+<%= link_to 'Edit', edit_passenger_path(@passenger) %> |
+<%= link_to 'Back', passengers_path %>

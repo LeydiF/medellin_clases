@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <h2>Ciudad origen:</h2>
+  <span><%= @route.city_o.name %></span><br>
+  <span>Pais:<%= @route.city_o.country %></span>
+</p>
+
+<p>
+  <h2>Ciudad destino:</h2>
+  <span><%= @route.city_d.name %></span><br>
+  <span>Pais:<%= @route.city_d.country %></span>
+</p>
+
+<%= link_to 'Editar', edit_route_path(@route) %> |
+<%= link_to 'Atras', routes_path %>
